@@ -7,8 +7,9 @@ ReadWriteLock用法
     而当读操作时，其它线程无法写入数据，但却可以读取数据 。`
     
 且看以下例子
-
-    public class ReadWriteLockDemo {
+[code:]
+```java
+ public class ReadWriteLockDemo {
 	static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	public static void main(String[] args) {
@@ -71,14 +72,13 @@ ReadWriteLock用法
 				System.out.println(Thread.currentThread().hashCode() + " get :end "
 						+ sdf.format(new Date()));
 				read.unlock();
-			}
-			
+			}			
 
 			return 1;
 		}
 	}
-    }
-
+  }
+```
 
 两个线程均是读线程，结果如下
 
