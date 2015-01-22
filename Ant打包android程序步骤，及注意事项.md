@@ -132,12 +132,14 @@ http://stackoverflow.com/questions/12308849/ant-build-android-project-with-depen
 * 在根目录增加以下两个文件:
 	* custom_rules.xml
 		包含如下内容:
-		<property file="ant.properties" />
-		<property file="local.properties" />
-		<property name="out.dir" value="out" />
+
+			property file="ant.properties" 
+			property file="local.properties" 
+			property name="out.dir" value="out" 
 		
 	* ant.properties
 		内容如下:
+
         	#签名文件
         	key.store=app-release-key.keystore
             #密码
