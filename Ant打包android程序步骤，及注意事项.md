@@ -58,47 +58,67 @@ http://stackoverflow.com/questions/12308849/ant-build-android-project-with-depen
 > > dependent
 > > > actionbarsherlock-new
 > > > > AndroidManifest.xml
+
 > > > > build.xml
+
 > > > > local.properties
+
 > > > > project.properties
 
 > > > android-times-sequare
 > > > > AndroidManifest.xml
+
 > > > > build.xml
+
 > > > > local.properties
+
 > > > > project.properties
 
 		
 > > > android-uitableview
 > > > > AndroidManifest.xml
+
 > > > > build.xml
+
 > > > > local.properties
+
 > > > > project.properties
-> > > > 
+
 > > > AppMsg-library
 > > > > AndroidManifest.xml
+
 > > > > build.xml
+
 > > > > local.properties
+
 > > > > project.properties
-            > 
+             
 > > > customShapeImageView
 > > > > AndroidManifest.xml
+
 > > > > build.xml
+
 > > > > local.properties
+
 > > > > project.properties
-            > 
+             
 > > > ResideMenu
 > > > > AndroidManifest.xml
+
 > > > > build.xml
+
 > > > > local.properties
+
 > > > > project.properties
-            > 
+             
 > > > sliding_menu_library
 > > > > AndroidManifest.xml
+
 > > > > build.xml
+
 > > > > local.properties
-> > > > project.properties
-            > 
+
+> > > > project.properties             
 	
 > AndroidManifest.xml
 > build.xml
