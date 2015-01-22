@@ -1,9 +1,10 @@
 Ant打包android程序步骤，及注意事项
 =====================
 参考链接
-
-[android]:	http://developer.android.com/tools/projects/projects-cmdline.html#UpdatingAProject	"Managing Projects from the Command Line"
-[stackoverflow]: http://stackoverflow.com/questions/12308849/ant-build-android-project-with-dependencies (Ant Build Android Project With Dependencies)
+Managing Projects from the Command Line
+http://developer.android.com/tools/projects/projects-cmdline.html#UpdatingAProject
+Ant Build Android Project With Dependencies
+http://stackoverflow.com/questions/12308849/ant-build-android-project-with-dependencies
 
 ------------------
 **NOTE:在遇到各种android相关的问题中，通过baidu，google发现，其实最好的资源还是google的android相关网站http://developer.android.com/
@@ -19,15 +20,15 @@ Ant打包android程序步骤，及注意事项
 *  实例项目的目录结构(应该是相对复杂的，如果了解了此项目的ant管理，那么一般项目基本无障碍)
 
 
->app
-	>> dependent
-		>>> actionbarsherlock-new
-		>>> android-times-sequare
-		>>> android-uitableview		
-		>>> AppMsg-library		
-		>>> customShapeImageView		
-		>>> ResideMenu		
-		>>> sliding_menu_library
+> app
+> > dependent
+> > > actionbarsherlock-new
+> > > android-times-sequare
+> > > android-uitableview		
+> > > AppMsg-library		
+> > > customShapeImageView		
+> > > ResideMenu		
+> > > sliding_menu_library
 
 
 * 依赖说明
@@ -44,7 +45,7 @@ Ant打包android程序步骤，及注意事项
 		进入根目录，然后执行以下代码:
          > android update project --name app --target android-20 --path .
 
-			具体参数说明查看:http://developer.android.com/tools/projects/projects-cmdline.html#UpdatingAProject
+	具体参数说明查看: http://developer.android.com/tools/projects/projects-cmdline.html#UpdatingAProject
 
 	* **如果是第三方依赖库(如本实例中的actionbarsherlock-new等)**
 		进入对应的第三方库文件的目录，执行以下代码
@@ -53,50 +54,50 @@ Ant打包android程序步骤，及注意事项
 
 执行之后的目录结构如下：
 
->app
-	>> dependent
-		>>> actionbarsherlock-new
-		>>> > AndroidManifest.xml
-            > build.xml
-            > local.properties
-            > project.properties
+> app
+> > dependent
+> > > actionbarsherlock-new
+> > > > AndroidManifest.xml
+> > > > build.xml
+> > > > local.properties
+> > > > project.properties
 
-		>>> android-times-sequare
-		>>> > AndroidManifest.xml
-            > build.xml
-            > local.properties
-            > project.properties
+> > > android-times-sequare
+> > > > AndroidManifest.xml
+> > > > build.xml
+> > > > local.properties
+> > > > project.properties
 
 		
-		>>> android-uitableview
-		>>> > AndroidManifest.xml
-            > build.xml
-            > local.properties
-            > project.properties
+> > > android-uitableview
+> > > > AndroidManifest.xml
+> > > > build.xml
+> > > > local.properties
+> > > > project.properties
+> > > > 
+> > > AppMsg-library
+> > > > AndroidManifest.xml
+> > > > build.xml
+> > > > local.properties
+> > > > project.properties
             > 
-		>>> AppMsg-library
-		>>> > AndroidManifest.xml
-            > build.xml
-            > local.properties
-            > project.properties
+> > > customShapeImageView
+> > > > AndroidManifest.xml
+> > > > build.xml
+> > > > local.properties
+> > > > project.properties
             > 
-		>>> customShapeImageView
-		>>> > AndroidManifest.xml
-            > build.xml
-            > local.properties
-            > project.properties
+> > > ResideMenu
+> > > > AndroidManifest.xml
+> > > > build.xml
+> > > > local.properties
+> > > > project.properties
             > 
-		>>> ResideMenu
-		>>> > AndroidManifest.xml
-            > build.xml
-            > local.properties
-            > project.properties
-            > 
-		>>> sliding_menu_library
-		>>> > AndroidManifest.xml
-            > build.xml
-            > local.properties
-            > project.properties
+> > > sliding_menu_library
+> > > > AndroidManifest.xml
+> > > > build.xml
+> > > > local.properties
+> > > > project.properties
             > 
 	
 > AndroidManifest.xml
@@ -160,11 +161,10 @@ Ant打包android程序步骤，及注意事项
 	* 对比【1】、【2】、【3】可知，如果是第三方库的话，project.properties文件中一定有:`android.library=true`
 	* 对第三方库的引用，路径是相对的，否则可能会出现含有如下文字的异常:
 	>	resolve to a path with no project.properties file for project	
-    [原因查看此处]: http://stackoverflow.com/questions/12308849/ant-build-android-project-with-dependencies
+    
+  	原因查看此处: http://stackoverflow.com/questions/12308849/ant-build-android-project-with-dependencies
 
 
-3. 三等分
-4. 速度f
-5. 三等分
-6. 速度f
+
+3.**排查异常时，仔细分析异常**
 
