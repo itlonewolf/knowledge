@@ -121,8 +121,11 @@ http://stackoverflow.com/questions/12308849/ant-build-android-project-with-depen
 > > > > project.properties             
 	
 > AndroidManifest.xml
+
 > build.xml
+
 > local.properties
+
 > project.properties
 
 **2. 增加所需文件**
